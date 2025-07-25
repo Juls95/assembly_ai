@@ -1,0 +1,5 @@
+A blockchain is a digitally distributed, decentralized, public ledger that exists across a network, most notably used in cryptocurrencies.
+It is a shared, immutable digital ledger that enables recording transactions and tracking assets within a business
+In cryptocurrency, blockchain serves as a decentralized ledger of all transactions across a peer-to-peer network, allowing participants to confirm transactions without a central authority.
+Each block contains a hash of the previous block, a timestamp, and transaction data, forming a chain that is securely linked via cryptographic hashes.
+Examples include Bitcoin's blockchain for secure, transparent transfers.
