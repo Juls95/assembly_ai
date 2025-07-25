@@ -1,0 +1,37 @@
+[
+  {
+    "filename": "test_audio/use_case_1.wav",
+    "expected_transcript": "What is a blockchain in cryptocurrency?",
+    "test_objective": "Test transcription accuracy and RAG retrieval for a basic crypto concept",
+    "success_criteria": "95% transcription accuracy for 'blockchain', 'cryptocurrency'; RAG retrieves definition from indexed Bitcoin whitepaper or glossary",
+    "notes": "Ensure word boosts include 'blockchain', 'cryptocurrency'. Response should define blockchain as a decentralized ledger."
+  },
+  {
+    "filename": "test_audio/use_case_2.wav",
+    "expected_transcript": "Can you explain zero-knowledge proofs and their use in crypto?",
+    "test_objective": "Test transcription of advanced jargon and RAG for technical explanation",
+    "success_criteria": "95% transcription accuracy for 'zero-knowledge proofs', 'crypto'; RAG retrieves explanation referencing privacy coins (e.g., Zcash)",
+    "notes": "Boost 'zero-knowledge proofs'. Expect technical details from knowledge base (e.g., whitepapers or crypto blogs)."
+  },
+  {
+    "filename": "test_audio/use_case_3.wav",
+    "expected_transcript": "What is the current price of Ethereum, and is it a good time to buy?",
+    "test_objective": "Test RAG integration with real-time market data and transcription accuracy",
+    "success_criteria": "95% transcription accuracy for 'Ethereum', 'price'; RAG retrieves current ETH price from CoinGecko or Alpha Vantage API",
+    "notes": "Boost 'Ethereum', 'ETH'. Response should include price and a basic market sentiment analysis."
+  },
+  {
+    "filename": "test_audio/use_case_4.wav",
+    "expected_transcript": "I asked about staking earlier; how does DeFi relate to it?",
+    "test_objective": "Test conversation learning by referencing prior context and RAG for DeFi explanation",
+    "success_criteria": "95% transcription accuracy for 'staking', 'DeFi'; Response references prior staking query and explains DeFi's use of staking",
+    "notes": "Boost 'staking', 'DeFi'. Requires LlamaIndex chat engine to recall staking context from indexed conversation history."
+  },
+  {
+    "filename": "test_audio/use_case_5.wav",
+    "expected_transcript": "Give me a quiz question on NFT terms like minting or royalty.",
+    "test_objective": "Test transcription and RAG for interactive educational content",
+    "success_criteria": "95% transcription accuracy for 'NFT', 'minting', 'royalty'; RAG generates a relevant quiz question (e.g., 'What is NFT minting?')",
+    "notes": "Boost 'NFT', 'minting', 'royalty'. Response should propose a clear, answerable quiz question."
+  }
+]
