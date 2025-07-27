@@ -17,6 +17,7 @@ from assemblyai.streaming.v3 import (
 )
 import json
 import sys
+import os
 
 # ---
 # Word boost list for jargon prioritization in real-time transcription
@@ -24,7 +25,9 @@ word_boost = [
     "Alpha", "Arbitrage", "Ask Price", "Bag Holder", "Bear Market", "Bid Price", "Blockchain", "Block Trade", "Bull Market", "Currency Pair", "Day Trading", "DeFi", "Dividend", "DYOR", "FOMO", "Fork", "FUD", "Gas Fee", "Halving", "HODL", "ICO", "Leverage", "Liquidity", "Long Position", "Margin Call", "Market Cap", "Mining", "NFT", "Pips", "Proof of Stake", "Proof of Work", "Pump and Dump", "Rug Pull", "Scalping", "Short Position", "Smart Contract", "Spread", "Staking", "Stop Loss", "Swing Trading", "Take Profit", "Volatility", "Volume", "Wallet", "Whale", "51% Attack", "Airdrop", "Altcoin", "ATH", "ROI"
 ]
 
-api_key = "d694ab449585476fa390008180983a65"  # Replace with your API key if needed
+api_key = os.getenv("ASSEMBLYAI_API_KEY")
+if not api_key:
+    raise ValueError("Please set the ASSEMBLYAI_API_KEY environment variable.")
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
