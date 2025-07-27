@@ -2,7 +2,7 @@
 
 A comprehensive system that combines AssemblyAI's Universal-Streaming technology with Retrieval-Augmented Generation (RAG) using LlamaIndex, Anthropic, and Pinecone. This project enables real-time speech-to-text transcription, semantic search, and conversational AI with long-term learning capabilities.
 
-[![Assembly AI Video](https://img.youtube.com/vi/pV6RO6BN4P4/0.jpg)](https://youtu.be/pV6RO6BN4P4)
+
 
 ## 🏗️ Project Structure
 
@@ -26,6 +26,14 @@ assembly_ai/
 - **Long-term Learning**: Conversation history integration
 - **Batch Testing**: Audio transcription accuracy evaluation
 - **Multi-Modal Input**: Support for both live audio and pre-recorded files
+
+## 📺 Demo Video
+
+Watch a demonstration of the system in action:
+
+[![AssemblyAI RAG System Demo](https://img.youtube.com/vi/YfIN-HNV6Nc/0.jpg)](https://youtu.be/YfIN-HNV6Nc)
+
+*Click the image above to watch the full demo video*
 
 ## 📋 Prerequisites
 
