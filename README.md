@@ -254,7 +254,7 @@ Update `test_cases.json`:
 
 ## 📄 License
 
-MIT License. See [LICENSE](https://github.com/Juls95/algoliaMCP/blob/main/LICENSE).
+MIT License. See [LICENSE](https://github.com/Juls95/assembly_ai/blob/main/LICENSE).
 
 ## 🆘 Support
 
